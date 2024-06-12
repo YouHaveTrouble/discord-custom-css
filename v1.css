@@ -1,0 +1,33 @@
+/* Removes profile effects that often obscure the contents of the profile */
+div[class*=profileEffects_] {
+  display: none;
+}
+/* Removes avatar decorations */
+img[class^="avatarDecoration__"] {
+  display: none;
+}
+
+/* Makes it so small images are not a blury mess */
+div[class*=imageWrapper_] {
+  image-rendering: pixelated;
+}
+
+/* I need you to understand that I'm not gifting nitro from my chatbox */
+button[aria-label="Send a gift"] {
+  display: none;
+}
+
+/* You can switch between pickers after clicking emoji button */
+button[aria-label="Open sticker picker"] {
+  display: none;
+}
+
+/* You can switch between pickers after clicking emoji button */
+button[aria-label="Open GIF picker"] {
+  display: none;
+}
+
+/* Discord support is useless in most cases, so stop sending me there */
+a[href="https://support.discord.com"] {
+  display: none;
+}
