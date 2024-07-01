@@ -27,6 +27,11 @@ button[aria-label="Open GIF picker"] {
   display: none;
 }
 
+/* I dun wanna your silly feature ads */
+span[aria-label="Download the mobile app to make your first remix"] {
+  display: none;
+}
+
 /* Discord support is useless in most cases, so stop sending me there */
 a[href="https://support.discord.com"] {
   display: none;
