@@ -36,3 +36,11 @@ span[aria-label="Download the mobile app to make your first remix"] {
 a[href="https://support.discord.com"] {
   display: none;
 }
+
+nav[aria-label="Servers sidebar"] div[class^="footer_"] {
+  display: none;
+}
+
+div[class^="channelAppLauncher_"] {
+  display: none;
+}
