@@ -37,10 +37,20 @@ a[href="https://support.discord.com"] {
   display: none;
 }
 
+/* Remove annoying server discovery sidebar thing */
 nav[aria-label="Servers sidebar"] div[class^="footer_"] {
   display: none;
 }
 
+/* Remove app launcher button */
 div[class^="channelAppLauncher_"] {
+  display: none;
+}
+
+/* Remove activities panel completely */
+div[aria-label="Members"] h3:has(span[role="button"]) {
+  display: none;
+}
+div[aria-label="Members"] div[class=""] {
   display: none;
 }
