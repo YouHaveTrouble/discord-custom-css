@@ -1,0 +1,81 @@
+/**
+* For discord visual refresh
+ */
+
+:root {
+  /* This is the padding of the message input box */
+  --custom-channel-textarea-text-area-height: 2.5rem;
+}
+
+div[class*=profileEffects_] {
+  display: none;
+}
+
+div[class*=imageWrapper_] {
+  image-rendering: pixelated;
+}
+
+button[aria-label="Send a gift"] {
+  display: none;
+}
+
+button[aria-label="Open sticker picker"] {
+  display: none;
+}
+
+button[aria-label="Open GIF picker"] {
+  display: none;
+}
+
+span[aria-label="Download the mobile app to make your first remix"] {
+  display: none;
+}
+
+a[href="https://support.discord.com"] {
+  display: none;
+}
+
+img[class^="avatarDecoration__"] {
+  display: none;
+}
+
+nav[aria-label="Servers sidebar"] div[class^="footer_"] {
+  display: none;
+}
+
+div[class^="channelAppLauncher_"] {
+  display: none;
+}
+
+div[aria-label="Members"] h3:has(span[role="button"]) {
+  display: none;
+}
+
+/* Adds spacing to the top of the top left discord button after removing the top bar */
+div[class^="itemsContainer_"] {
+  padding-top: 0.5rem;
+}
+
+/* Makes entire message input box lower to not waste space on the bottom */
+[class^="channelTextArea_"] {
+  margin-bottom: 0.5rem;
+}
+
+/* removes pointless spacing on the buttons within message input box */
+div[class^="buttons__"] {
+  gap: 0 !important;
+}
+
+/* Removes top bar */
+.visual-refresh div[class^="base_"] {
+  grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
+}
+
+/* Remove the margin between messages and input box. Why tf did they do this? */
+.visual-refresh form[class^="form_"] {
+  margin-top: 0;
+}
+
+div[class^="base_"] div[class^="bar_"] {
+  display: none;
+}
