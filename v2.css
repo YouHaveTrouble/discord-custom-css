@@ -92,13 +92,18 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 0.5rem;
-}
-.visual-refresh section[aria-label="User area"] div[class^="container__"] div[class^="buttons__"] button[type="button"] {
-  width: 1.1rem;
-  height: 1.1rem;
 }
 .visual-refresh [class^="sidebar_"] [aria-label="Servers sidebar"] {
   margin-bottom: 0;
+}
+.visual-refresh section[aria-label="User area"] div[class^="container__"] div[class^="buttons__"] > div {
+  width: 100%;
+}
+.visual-refresh section[aria-label="User area"] div[class^="container__"] div[class^="buttons__"] > button {
+  width: 100%;
+}
+.visual-refresh section[aria-label="User area"] div[class^="container__"] div[class^="buttons__"] > div > button {
+  width: 100%;
 }
