@@ -81,7 +81,7 @@
 }
 .visual-refresh section[aria-label="User area"] div[class^="container__"] {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-inline: 0.5rem;
   gap: 0;
 }
@@ -89,21 +89,22 @@
   width: 100%;
 }
 .visual-refresh section[aria-label="User area"] div[class^="container__"] div[class^="buttons__"] {
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: right;
   gap: 0.5rem;
 }
+
 .visual-refresh [class^="sidebar_"] [aria-label="Servers sidebar"] {
   margin-bottom: 0;
 }
 .visual-refresh section[aria-label="User area"] div[class^="container__"] div[class^="buttons__"] > div {
-  width: 100%;
+  width: auto;
 }
 .visual-refresh section[aria-label="User area"] div[class^="container__"] div[class^="buttons__"] > button {
-  width: 100%;
+  width: auto;
 }
 .visual-refresh section[aria-label="User area"] div[class^="container__"] div[class^="buttons__"] > div > button {
-  width: 100%;
+  width: auto;
 }
