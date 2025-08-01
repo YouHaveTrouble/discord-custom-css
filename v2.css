@@ -18,22 +18,22 @@
 }
 
 /* Remove useless buttons */
-.visual-refresh button[aria-label="Send a gift"] {
+.visual-refresh [aria-label="Send a gift"] {
   display: none;
 }
-.visual-refresh button[aria-label="Open sticker picker"] {
+.visual-refresh [aria-label="Open sticker picker"] {
   display: none;
 }
-.visual-refresh button[aria-label="Open GIF picker"] {
+.visual-refresh [aria-label="Open GIF picker"] {
   display: none;
 }
-.visual-refresh span[aria-label="Download the mobile app to make your first remix"] {
+.visual-refresh [aria-label="Download the mobile app to make your first remix"] {
   display: none;
 }
 .visual-refresh a[href="https://support.discord.com"] {
   display: none;
 }
-.visual-refresh div[class^="channelAppLauncher_"] {
+.visual-refresh [class^="channelAppLauncher_"] {
   display: none;
 }
 
