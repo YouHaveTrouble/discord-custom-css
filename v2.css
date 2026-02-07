@@ -1,5 +1,5 @@
-:root {
-  --custom-channel-textarea-text-area-height: 2.5rem;
+[class^="channelBottomBarArea_"] {
+  margin-bottom: 0.5rem;
 }
 
 /* Remove profile effects */
@@ -38,7 +38,7 @@
   display: none;
 }
 
-.visual-refresh .app-launcher-entrypoint {
+.app-launcher-entrypoint {
   display: none;
 }
 
@@ -66,7 +66,7 @@
 
 /* User area rework */
 
-.visual-refresh section[aria-label="User area"] {
+.visual-refresh section[aria-label="User status and settings"] {
 
   & div[class*="container__"] {
     display: flex;
@@ -111,8 +111,14 @@
   font-size: 0.75rem;
 }
 
-.align-chat-input [class^="scrollerSpacer__"] {
-  height: 1.75rem !important;
+[class^="scrollerSpacer__"] {
+  height: 0.5rem !important;
+}
+
+
+[class*="typingGradientAtBottom__"] {
+  webkit-mask: none !important;
+  mask: none !important;
 }
 
 main {
@@ -139,6 +145,17 @@ form[class*="formWithLoadedChatInput_"] [class^="attachWrapper__"] {
   align-items: center;
 }
 
-.channelTextArea_f75fb0 {
-  margin-bottom: 1.25rem;
+@media (max-width: 1200px) {
+  div[class^="content_"] [class^="membersWrap"] {
+    display: none;
+  }
+}
+
+._36d072eab2b2e737-scrollerSpacer {
+  height: 1.25rem !important;
+}
+
+._5e434347c823b592-base {
+  grid-template-areas: "titleBar titleBar titleBar" "guildsList notice notice" "guildsList channelsList page" !important;
+
 }
